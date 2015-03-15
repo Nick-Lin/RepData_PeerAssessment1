@@ -96,7 +96,7 @@ interval_with_max_avg_daily_steps&lt;-sprintf(&quot;%04d&quot;, as.integer(activ
 <div id="imputing-missing-values" class="section level2">
 <h2>Imputing missing values</h2>
 <pre class="r"><code>ttl_na&lt;-nrow(activityData[(activityData$steps==NA),])</code></pre>
-<p>The total number of missing values in the dataset is 17568.</p>
+<p>The total number of missing values in the dataset is 17568.<br />Using median values for each interval as the strategy for imputing missing data.</p>
 <pre class="r"><code>library(data.table)</code></pre>
 <pre><code>## 
 ## Attaching package: 'data.table'

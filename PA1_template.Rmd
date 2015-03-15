@@ -43,7 +43,8 @@ The 5-min interval, `r interval_with_max_avg_daily_steps`, contains the maximum 
 ```{r}
 ttl_na<-nrow(activityData[(activityData$steps==NA),])
 ```
-The total number of missing values in the dataset is `r ttl_na`.
+The total number of missing values in the dataset is `r ttl_na`.  
+Using median values for each interval as the strategy for imputing missing data.
 ```{r}
 library(data.table)
 DT<-data.table(activityData)

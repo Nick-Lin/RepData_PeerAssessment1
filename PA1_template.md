@@ -66,7 +66,8 @@ The 5-min interval, 0835, contains the maximum number of steps on average across
 ```r
 ttl_na<-nrow(activityData[(activityData$steps==NA),])
 ```
-The total number of missing values in the dataset is 17568.
+The total number of missing values in the dataset is 17568.  
+Using median values for each interval as the strategy for imputing missing data.
 
 ```r
 library(data.table)
